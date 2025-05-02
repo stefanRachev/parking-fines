@@ -61,6 +61,14 @@ body {
 
 }
 
+.fine-title {
+  color: #2c3e50;
+  border-bottom: 2px solid #e74c3c;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  
+}
+
 .fine-group {
   background: #f8f9fa;
   border-radius: 8px;
@@ -94,13 +102,7 @@ body {
   color: #27ae60;
 }
 
-.fine-title {
-  color: #2c3e50;
-  border-bottom: 2px solid #e74c3c;
-  padding-bottom: 5px;
-  margin-bottom: 15px;
-  
-}
+
 
 
 @media (max-width: 768px) {
