@@ -1,57 +1,36 @@
-// const searchInput = document.getElementById("searchInput");
-// const fineItems = document.querySelectorAll(".fine-item");
-
-// searchInput.addEventListener("input", () => {
-//   const searchTerm = searchInput.value.toLowerCase();
-
-//   fineItems.forEach((item) => {
-//     const descText = item.querySelector(".fine-desc").textContent.toLowerCase();
-//     const keywords = item.dataset.keywords
-//       ? item.dataset.keywords.toLowerCase()
-//       : "";
-
-//     const isKeywordMatch = keywords.includes(searchTerm);
-//     const isDescMatch = descText.includes(searchTerm);
-
-//     if (isKeywordMatch || isDescMatch) {
-//       item.style.display = "";
-//     } else {
-//       item.style.display = "none";
-//     }
-//   });
-// });
-
-// const clearButton = document.getElementById("clearButton");
-
-// clearButton.addEventListener("click", () => {
-//   searchInput.value = "";
-//   searchInput.dispatchEvent(new Event("input"));
-// });
-
-
+const fineGroups = document.querySelectorAll(".fine-group");
 const searchInput = document.getElementById("searchInput");
-const fineItems = document.querySelectorAll(".fine-item");
 
 searchInput.addEventListener("input", () => {
   const searchTerm = searchInput.value.toLowerCase();
 
-  fineItems.forEach((item) => {
-    const keywords = item.dataset.keywords
-      ? item.dataset.keywords.toLowerCase()
-      : "";
+  fineGroups.forEach((group) => {
+    const fineItems = group.querySelectorAll(".fine-item");
+    let groupHasMatch = false;
 
-    if (keywords.includes(searchTerm)) {
-      item.style.display = "";
+    fineItems.forEach((item) => {
+      const keywords = item.dataset.keywords
+        ? item.dataset.keywords.toLowerCase()
+        : "";
+
+      if (keywords.includes(searchTerm) || searchTerm === "") {
+        item.style.display = "";
+        groupHasMatch = true;
+      } else {
+        item.style.display = "none";
+      }
+    });
+
+    if (groupHasMatch) {
+      group.style.display = "";
     } else {
-      item.style.display = "none";
+      group.style.display = "none";
     }
   });
 });
 
 const clearButton = document.getElementById("clearButton");
-
 clearButton.addEventListener("click", () => {
   searchInput.value = "";
   searchInput.dispatchEvent(new Event("input"));
 });
-
