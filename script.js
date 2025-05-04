@@ -14,3 +14,10 @@ searchInput.addEventListener('input', () => {
         }
     });
 });
+
+const clearButton = document.getElementById('clearButton');
+
+clearButton.addEventListener('click', () => {
+  searchInput.value = '';
+  searchInput.dispatchEvent(new Event('input'));
+});
