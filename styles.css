@@ -108,3 +108,29 @@ body {
     padding: 10px;
   }
 }
+
+.clear-button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 14px; 
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  align-self: flex-start;
+  transition: background-color 0.3s ease;
+  margin-left: 60px; 
+}
+
+.clear-button:hover {
+  background-color: #c0392b;
+}
+
+@media (max-width: 480px) {
+  .clear-button {
+    padding: 8px 14px; 
+    font-size: 16px;  
+    margin-left: 18px; 
+  }
+}
