@@ -34,3 +34,42 @@ clearButton.addEventListener("click", () => {
   searchInput.value = "";
   searchInput.dispatchEvent(new Event("input"));
 });
+
+
+
+const modal = document.getElementById("fineModal");
+const closeBtn = document.querySelector(".close-modal");
+
+
+function openModal(law, desc, price) {
+  document.getElementById("modal-law-text").textContent = law;
+  document.getElementById("modal-desc-text").textContent = desc;
+  document.getElementById("modal-price-text").textContent = price;
+  modal.style.display = "block";
+  document.body.style.overflow = "hidden"; 
+}
+
+
+function closeModal() {
+  modal.style.display = "none";
+  document.body.style.overflow = "auto"; 
+}
+
+closeBtn.addEventListener("click", closeModal);
+
+
+window.addEventListener("click", (event) => {
+  if (event.target === modal) {
+    closeModal();
+  }
+});
+
+
+document.querySelectorAll(".fine-item").forEach(item => {
+  item.addEventListener("click", function() {
+    const law = this.querySelector(".fine-law").textContent;
+    const desc = this.querySelector(".fine-desc").textContent;
+    const price = this.querySelector(".fine-price").textContent;
+    openModal(law, desc, price);
+  });
+});

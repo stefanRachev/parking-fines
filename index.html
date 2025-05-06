@@ -1,227 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Parking-fines</title>
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
 
-  <body>
-    <div class="container">
-      <h1>Наказания за Паркиране</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parking-fines</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
 
-      <input
-        type="text"
-        placeholder="Търсене по описание..."
-        class="input-field"
-        id="searchInput"
-      />
-      <button id="clearButton" class="clear-button">Изчисти</button>
+<body>
+  <div class="container">
+    <h1>Наказания за Паркиране</h1>
 
-      <section class="fine-group">
-        <h2 class="fine-title">Глоби от 20 лв.</h2>
+    <input type="text" placeholder="Търсене по описание..." class="input-field" id="searchInput" />
+    <button id="clearButton" class="clear-button">Изчисти</button>
 
-        <div
-          class="fine-item"
-          data-keywords="znak znaci paten znak b 27 б 27 б 28 b 28 знак знаци пътен знак пътни знаци"
-        >
-          <div class="fine-law">
-            Чл.6, т.1, пр.3 / Наказва по - чл.183, ал.2, т.1
-          </div>
-          <p class="fine-desc">
-            Пътни знаци В27 или В28 с допълнителна табела Т17.
-          </p>
-          <div class="fine-price">20 лв.</div>
+    <section class="fine-group">
+      <h2 class="fine-title">Глоби от 20 лв.</h2>
+
+      <div class="fine-item"
+        data-keywords="znak znaci paten znak b 27 б 27 б 28 b 28 знак знаци пътен знак пътни знаци">
+        <div class="fine-law">
+          Чл.6, т.1, пр.3 / Наказва по - чл.183, ал.2, т.1
         </div>
+        <p class="fine-desc">
+          Пътни знаци В27 или В28 с допълнителна табела Т17.
+        </p>
+        <div class="fine-price">20 лв.</div>
+      </div>
 
-        <div
-          class="fine-item"
-          data-keywords="prechi sasdava opasnost пречи съсдава опасност косо koso "
-        >
-          <div class="fine-law">
-            Чл.98, ал.1, т.1 / Наказва по - чл.183, ал.2, т.1
-          </div>
-          <p class="fine-desc">
-            На място, където превозното средство създава опасност или е пречка
-            за движението или закрива от другите участници в движението пътен
-            знак или сигнал
-          </p>
-          <div class="fine-price">20 лв.</div>
+      <div class="fine-item" data-keywords="prechi sasdava opasnost пречи съсдава опасност косо koso ">
+        <div class="fine-law">
+          Чл.98, ал.1, т.1 / Наказва по - чл.183, ал.2, т.1
         </div>
+        <p class="fine-desc">
+          На място, където превозното средство създава опасност или е пречка
+          за движението или закрива от другите участници в движението пътен
+          знак или сигнал
+        </p>
+        <div class="fine-price">20 лв.</div>
+      </div>
 
-        <div
-          class="fine-item"
-          data-keywords="tuneli podlezi mostove nadlezzi stesneni uchastaci ogranichena vidimost тунели подлези мостове надлеззи стеснени участъци ограничена видимост"
-        >
-          <div class="fine-law">
-            Чл.98, ал.1, т.3 / Наказва по - чл.183, ал.2, т.1
-          </div>
-          <p class="fine-desc">
-            В тунели и подлези, на мостове, надлези, стеснени участъци от пътя и
-            в участъци с ограничена видимост.
-          </p>
-          <div class="fine-price">20 лв.</div>
+      <div class="fine-item"
+        data-keywords="tuneli podlezi mostove nadlezzi stesneni uchastaci ogranichena vidimost тунели подлези мостове надлеззи стеснени участъци ограничена видимост">
+        <div class="fine-law">
+          Чл.98, ал.1, т.3 / Наказва по - чл.183, ал.2, т.1
         </div>
+        <p class="fine-desc">
+          В тунели и подлези, на мостове, надлези, стеснени участъци от пътя и
+          в участъци с ограничена видимост.
+        </p>
+        <div class="fine-price">20 лв.</div>
+      </div>
 
-        <div class="fine-item" data-keywords="върху трамвайни линии релси релсови железопътни jelezopatni linii tramvaini relsi">
-          <div class="fine-law">
-            Чл.98, ал.1, т.4 / Наказва по - чл.180, ал.1, т.1
-          </div>
-          <p class="fine-desc">
-            Върху трамвайни и железопътни линии или в такава близост до тях,
-            която може да затрудни движението на релсовите превозни средства.
-          </p>
-          <div class="fine-price">20 лв.</div>
+      <div class="fine-item"
+        data-keywords="върху трамвайни линии релси релсови железопътни jelezopatni linii tramvaini relsi">
+        <div class="fine-law">
+          Чл.98, ал.1, т.4 / Наказва по - чл.180, ал.1, т.1
         </div>
+        <p class="fine-desc">
+          Върху трамвайни и железопътни линии или в такава близост до тях,
+          която може да затрудни движението на релсовите превозни средства.
+        </p>
+        <div class="fine-price">20 лв.</div>
+      </div>
 
-        <div class="fine-item" data-keywords="po malko ot 3 metra по малко от три метра 3 метра tri metra">
-          <div class="fine-law">
-            Чл.98, ал.1, т.7 / Наказва по - чл.183, ал.2, т.1
-          </div>
-          <p class="fine-desc">
-            На платното за движение, където разстоянието между пътното превозно
-            средство и пътната маркировка, забранена за пресичане, е по-малко от
-            3 метра или с пътен знак е забранено изпреварването.
-          </p>
-          <div class="fine-price">20 лв.</div>
+      <div class="fine-item" data-keywords="po malko ot 3 metra по малко от три метра 3 метра tri metra">
+        <div class="fine-law">
+          Чл.98, ал.1, т.7 / Наказва по - чл.183, ал.2, т.1
         </div>
+        <p class="fine-desc">
+          На платното за движение, където разстоянието между пътното превозно
+          средство и пътната маркировка, забранена за пресичане, е по-малко от
+          3 метра или с пътен знак е забранено изпреварването.
+        </p>
+        <div class="fine-price">20 лв.</div>
+      </div>
 
-        <div class="fine-item" data-keywords="patna markirovka пътна маркировка м 14 м 15 m 14 m 15 varhu върху">
-          <div class="fine-law">
-            Чл.6, т.1, пр.4 / Наказва по - чл.183, ал.2, т.1
-          </div>
-          <p class="fine-desc">Върху пътната маркировка (М14 или М15)</p>
-          <div class="fine-price">20 лв.</div>
+      <div class="fine-item" data-keywords="patna markirovka пътна маркировка м 14 м 15 m 14 m 15 varhu върху">
+        <div class="fine-law">
+          Чл.6, т.1, пр.4 / Наказва по - чл.183, ал.2, т.1
         </div>
+        <p class="fine-desc">Върху пътната маркировка (М14 или М15)</p>
+        <div class="fine-price">20 лв.</div>
+      </div>
 
-        <div class="fine-item" data-keywords="входове пред vhodove pred">
-          <div class="fine-law">
-            Чл.98, ал.2, т.1 / Наказва по - чл.183, ал.2, т.1
-          </div>
-          <p class="fine-desc">
-            Пред входовете на паркове, театри, кина, предприятия, както и на
-            други места, където е възможно да влизат или да излизат пътни
-            превозни средства.
-          </p>
-          <div class="fine-price">20 лв.</div>
+      <div class="fine-item" data-keywords="входове пред vhodove pred">
+        <div class="fine-law">
+          Чл.98, ал.2, т.1 / Наказва по - чл.183, ал.2, т.1
         </div>
+        <p class="fine-desc">
+          Пред входовете на паркове, театри, кина, предприятия, както и на
+          други места, където е възможно да влизат или да излизат пътни
+          превозни средства.
+        </p>
+        <div class="fine-price">20 лв.</div>
+      </div>
 
-        <div class="fine-item" data-keywords="garaji гаражи гараж garaj pred vhod пред вход">
-          <div class="fine-law">
-            Чл.98, ал.2, т.2 / Наказва по - чл.183, ал.2, т.1
-          </div>
-          <p class="fine-desc">
-            На платното за движение и на тротоара непосредствено пред входовете
-            на жилищни сгради и гаражи, когато това затруднява достъпа до тях.
-          </p>
-          <div class="fine-price">20 лв.</div>
+      <div class="fine-item" data-keywords="garaji гаражи гараж garaj pred vhod пред вход">
+        <div class="fine-law">
+          Чл.98, ал.2, т.2 / Наказва по - чл.183, ал.2, т.1
         </div>
+        <p class="fine-desc">
+          На платното за движение и на тротоара непосредствено пред входовете
+          на жилищни сгради и гаражи, когато това затруднява достъпа до тях.
+        </p>
+        <div class="fine-price">20 лв.</div>
+      </div>
 
-        <div class="fine-item" data-keywords="училища пред вход входове uchilishta детски градини detski gradini">
-          <div class="fine-law">
-            Чл.98, ал.2, т.6 / Наказва по - чл.183, ал.2, т.1
-          </div>
-          <p class="fine-desc">
-            Пред входовете и на прилежащите тротоари на детските заведения и
-            училищата.
-          </p>
-          <div class="fine-price">20 лв.</div>
+      <div class="fine-item" data-keywords="училища пред вход входове uchilishta детски градини detski gradini">
+        <div class="fine-law">
+          Чл.98, ал.2, т.6 / Наказва по - чл.183, ал.2, т.1
         </div>
+        <p class="fine-desc">
+          Пред входовете и на прилежащите тротоари на детските заведения и
+          училищата.
+        </p>
+        <div class="fine-price">20 лв.</div>
+      </div>
 
-        <div class="fine-item" data-keywords="taxi taksi stoqnka стоянка такси таксита">
-          <div class="fine-law">
-            Чл.6, т.1, пр.3 / Наказва по - чл.183, ал.2, т.1
-          </div>
-          <p class="fine-desc">ТАКСИ стоянка табела - Е20</p>
-          <div class="fine-price">20 лв.</div>
+      <div class="fine-item" data-keywords="taxi taksi stoqnka стоянка такси таксита">
+        <div class="fine-law">
+          Чл.6, т.1, пр.3 / Наказва по - чл.183, ал.2, т.1
         </div>
+        <p class="fine-desc">ТАКСИ стоянка табела - Е20</p>
+        <div class="fine-price">20 лв.</div>
+      </div>
 
-        <div class="fine-item" data-keywords="еднопосочно ednoposochno от ляво ot lqvo na dvijenieto на движението лявата страна">
-          <div class="fine-law">
-            Чл.94, ал.4 / Наказва по - чл.183, ал.2, т.1
-          </div>
-          <p class="fine-desc">
-            На път с еднопосочно движение се допуска престой и от лявата страна
-            по посока на движението, ако това не пречи на движението на пътните
-            превозни средства.
-          </p>
-          <div class="fine-price">20 лв.</div>
+      <div class="fine-item"
+        data-keywords="еднопосочно ednoposochno от ляво ot lqvo na dvijenieto на движението лявата страна">
+        <div class="fine-law">
+          Чл.94, ал.4 / Наказва по - чл.183, ал.2, т.1
         </div>
-      </section>
+        <p class="fine-desc">
+          На път с еднопосочно движение се допуска престой и от лявата страна
+          по посока на движението, ако това не пречи на движението на пътните
+          превозни средства.
+        </p>
+        <div class="fine-price">20 лв.</div>
+      </div>
+    </section>
 
-      <section class="fine-group">
-        <h2 class="fine-title">Глоби от 50 лв.</h2>
+    <section class="fine-group">
+      <h2 class="fine-title">Глоби от 50 лв.</h2>
 
-        <div
-          class="fine-item"
-          data-keywords="тротоар trotoar trotoara trotoari тротоари върху varhu"
-        >
-          <div class="fine-law">Чл.94, ал.3 / Наказва по - чл.198е</div>
-          <p class="fine-desc">
-            Паркиране на моторни превозни средства с допустима максимална маса
-            до 2,5 тона върху тротоарите, само на определените от собствениците
-            на пътя или администрацията места.
-          </p>
-          <div class="fine-price">50 лв.</div>
+      <div class="fine-item" data-keywords="тротоар trotoar trotoara trotoari тротоари върху varhu">
+        <div class="fine-law">Чл.94, ал.3 / Наказва по - чл.198е</div>
+        <p class="fine-desc">
+          Паркиране на моторни превозни средства с допустима максимална маса
+          до 2,5 тона върху тротоарите, само на определените от собствениците
+          на пътя или администрацията места.
+        </p>
+        <div class="fine-price">50 лв.</div>
+      </div>
+
+      <div class="fine-item" data-keywords="wtori red втори ред vtrori red ">
+        <div class="fine-law">
+          Чл.94, ал.1, т.2 / Наказва по - чл.183, ал.4, т.9
         </div>
+        <p class="fine-desc">
+          До престояващо или паркирано пътно превозно средство от страната на
+          движението.(Втори ред на платното за движение)
+        </p>
+        <div class="fine-price">50 лв.</div>
+      </div>
 
-        <div class="fine-item" data-keywords="wtori red втори ред vtrori red ">
-          <div class="fine-law">
-            Чл.94, ал.1, т.2 / Наказва по - чл.183, ал.4, т.9
-          </div>
-          <p class="fine-desc">
-            До престояващо или паркирано пътно превозно средство от страната на
-            движението.(Втори ред на платното за движение)
-          </p>
-          <div class="fine-price">50 лв.</div>
+      <div class="fine-item"
+        data-keywords="peshehodni pateki velo alei pateki велоалеи велосипедни пешеходни пътеки пешаходни вело ">
+        <div class="fine-law">
+          Чл.94, ал.1, т.5 / Наказва по - чл.183, ал.4, т.8
         </div>
+        <p class="fine-desc">
+          На пешеходни или велосипедни пътеки и на разстояние, по-малко от 5
+          метра преди тях.
+        </p>
+        <div class="fine-price">50 лв.</div>
+      </div>
 
-        <div class="fine-item" data-keywords="peshehodni pateki velo alei pateki велоалеи велосипедни пешеходни пътеки пешаходни вело ">
-          <div class="fine-law">
-            Чл.94, ал.1, т.5 / Наказва по - чл.183, ал.4, т.8
-          </div>
-          <p class="fine-desc">
-            На пешеходни или велосипедни пътеки и на разстояние, по-малко от 5
-            метра преди тях.
-          </p>
-          <div class="fine-price">50 лв.</div>
+      <div class="fine-item" data-keywords="кръстовище krastovishte по малко от 5 метра">
+        <div class="fine-law">
+          Чл.94, ал.1, т.6 / Наказва по - чл.183, ал.4, т.8
         </div>
+        <p class="fine-desc">
+          На кръстовище и на по-малко от 5 метра от тях.
+        </p>
+        <div class="fine-price">50 лв.</div>
+      </div>
 
-        <div class="fine-item" data-keywords="кръстовище krastovishte по малко от 5 метра">
-          <div class="fine-law">
-            Чл.94, ал.1, т.6 / Наказва по - чл.183, ал.4, т.8
-          </div>
-          <p class="fine-desc">
-            На кръстовище и на по-малко от 5 метра от тях.
-          </p>
-          <div class="fine-price">50 лв.</div>
+      <div class="fine-item" data-keywords="спирка спирки масов spirka spirki na на">
+        <div class="fine-law">
+          Чл.94, ал.2, т.3 / Наказва по - чл.183, ал.4, т.8
         </div>
+        <p class="fine-desc">
+          На спирките на превозните средства от редовните линии за обществен
+          превоз на пътници.
+        </p>
+        <div class="fine-price">50 лв.</div>
+      </div>
+    </section>
 
-        <div class="fine-item" data-keywords="спирка спирки масов spirka spirki na на">
-          <div class="fine-law">
-            Чл.94, ал.2, т.3 / Наказва по - чл.183, ал.4, т.8
-          </div>
-          <p class="fine-desc">
-            На спирките на превозните средства от редовните линии за обществен
-            превоз на пътници.
-          </p>
-          <div class="fine-price">50 лв.</div>
-        </div>
-      </section>
+    <section class="fine-group">
+      <h2 class="fine-title">Глоби от 200 лв.</h2>
 
-      <section class="fine-group">
-        <h2 class="fine-title">Глоби от 200 лв.</h2>
+      <div class="fine-item" data-keywords="инвалид инвалидно място invalid invalidno mqsto trajni трайнни увреждания">
+        <div class="fine-law">Чл.98, ал.2, т.4 / Наказва по - чл.178д</div>
+        <p class="fine-desc">
+          На места, определени за хора с трайни увреждания.
+        </p>
+        <div class="fine-price">200 лв.</div>
+      </div>
+    </section>
+  </div>
 
-        <div class="fine-item" data-keywords="инвалид инвалидно място invalid invalidno mqsto trajni трайнни увреждания">
-          <div class="fine-law">Чл.98, ал.2, т.4 / Наказва по - чл.178д</div>
-          <p class="fine-desc">
-            На места, определени за хора с трайни увреждания.
-          </p>
-          <div class="fine-price">200 лв.</div>
-        </div>
-      </section>
+  <div class="modal" id="fineModal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h2 class="modal-title">Детайли за глобата</h2>
+      <div class="modal-body">
+        <p><strong>Закон:</strong> <span id="modal-law-text"></span></p>
+        <p><strong>Описание:</strong> <span id="modal-desc-text"></span></p>
+        <p><strong>Размер на глобата:</strong> <span id="modal-price-text"></span></p>
+      </div>
     </div>
-    <script src="./script.js"></script>
-  </body>
+  </div>
+  
+  <script src="./script.js"></script>
+</body>
+
 </html>
